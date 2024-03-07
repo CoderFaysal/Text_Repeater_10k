@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        style="@style/BUTTON_ITEMS"
+        android:gravity="center"
+        android:paddingHorizontal="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/back_to_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            android:layout_marginRight="10dp"
+            app:tint="@color/white"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developer Profile"
+            android:textSize="18sp"
+            android:padding="10dp"
+            style="@style/TX_COLOR"
+
+            />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:padding="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="30dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileName"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/coderfaysal"
+                        app:civ_border_color="#4C4B4B"
+                        app:civ_border_width="2dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/custom_txt_bg"
+                    android:paddingTop="10dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="7dp"
+                            android:weightSum="10"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"
+                                android:src="@drawable/ic_person"
+                                android:layout_weight="1"
+                                style="@style/ICON_COLOR"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Name"
+                                android:textSize="13sp"
+                                style="@style/TEXT_COLOR"
+                                android:layout_weight="9"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fahim Faysal"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            style="@style/TEXT_COLOR"
+                            android:layout_weight="9"
+                            android:layout_marginLeft="62dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/whatsapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        style="@style/GRAY_BACKGROUND"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="5dp"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="7dp"
+                            android:weightSum="10"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"
+                                android:src="@drawable/call"
+                                android:layout_weight="1"
+                                style="@style/ICON_COLOR"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Phone"
+                                android:textSize="13sp"
+                                style="@style/TEXT_COLOR"
+                                android:layout_weight="9"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+8801833-732555"
+                            android:textIsSelectable="true"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            style="@style/TEXT_COLOR"
+                            android:layout_weight="9"
+                            android:layout_marginLeft="62dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="7dp"
+                            android:weightSum="10"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="18dp"
+                                android:src="@drawable/ic_mail"
+                                android:layout_weight="1"
+                                style="@style/ICON_COLOR"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email"
+                                android:textSize="13sp"
+                                style="@style/TEXT_COLOR"
+                                android:layout_weight="9"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="innovativeprogrammer01@gmail.com"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textIsSelectable="true"
+                            style="@style/TEXT_COLOR"
+                            android:layout_weight="9"
+                            android:layout_marginLeft="62dp"
+                            android:layout_marginBottom="15dp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        style="@style/GRAY_BACKGROUND"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:paddingBottom="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="7dp"
+                            android:weightSum="10"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="18dp"
+                                android:src="@drawable/fb"
+                                android:layout_weight="1"
+                                style="@style/ICON_COLOR"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Facebook"
+                                android:textSize="13sp"
+                                style="@style/TEXT_COLOR"
+                                android:layout_weight="9"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="https://facebook.com/coderfaysal"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            style="@style/TEXT_COLOR"
+                            android:layout_weight="9"
+                            android:layout_marginLeft="62dp"
+                            android:textIsSelectable="true"
+                            android:layout_marginBottom="15dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Current Version"
+                    style="@style/TEXT_COLOR"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    />
+
+
+                <TextView
+                    android:id="@+id/versionName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1.0.0"
+                    style="@style/TEXT_COLOR"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

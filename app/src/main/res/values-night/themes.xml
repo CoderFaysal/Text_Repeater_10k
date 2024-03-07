@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TextRepeater" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">#12151E</item>
+    </style>
+
+
+    <style name="BUTTON_ITEMS">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">#12151E</item>
+    </style>
+
+    <style name="TX_COLOR">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="GRAY_BACKGROUND">
+        <item name="android:background">#12151E</item>
+    </style>
+
+    <style name="TEXT_COLOR">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BUTTON_COLOR">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ICON_COLOR">
+        <item name="tint">@color/white</item>
+    </style>
+
+    <style name="MAIN_BG">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="EDIT_TEXT_BG">
+        <item name="android:background">@drawable/edit_text_shape_night</item>
+    </style>
+
+    <style name="EDIT_TEXT_BG2">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/edit_text_shape_night</item>
+    </style>
+
+    <style name="DETAILS_BG">
+        <item name="android:background">@drawable/details_shape_night</item>
+    </style>
+
+
+    <style name="ICON_1">
+        <item name="android:src">@drawable/copy</item>
+    </style>
+
+    <style name="ICON_2">
+        <item name="android:src">@drawable/share</item>
+    </style>
+
+
+
+
+
+</resources>
